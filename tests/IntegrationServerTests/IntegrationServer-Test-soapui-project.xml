@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="79af5863-242f-4e60-8720-fd9042448bc7" activeEnvironment="Default" name="IntegrationServer_Test" resourceRoot="" soapui-version="5.3.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="IntegrationServer_TestSuite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="runIntegrationServerService"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="bf48de62-692e-4e21-839b-f891b6a1f254" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://vmmosy07.eur.ad.sag:5555" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://vmmosy07.eur.ad.sag:5555</con:endpoint></con:endpoints><con:resource name="Pub.flow:debugLog" path="/invoke/pub.flow:debugLog" id="08bae500-8f0f-4f30-9069-21e341ce8b75"><con:settings/><con:parameters/><con:method name="Pub.flow:debugLog 1" id="63270763-812f-4c67-a38c-4118022af528" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="a455aad7-c84f-4c38-9e08-3fdf40cf7795" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://vmmosy07.eur.ad.sag:5555</con:endpoint><con:request/><con:originalUri>http://vmmosy07.eur.ad.sag/invoke/pub.flow:debugLog</con:originalUri><con:credentials><con:username>Administrator</con:username><con:password>manage</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="8888c008-3c66-4ca8-82ff-feb840ad2a09" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://vmmosy07.eur.ad.sag:5554" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://vmmosy07.eur.ad.sag:5554</con:endpoint></con:endpoints><con:resource name="Fibonachi.services:getFibunachiNumber" path="/invoke/Fibonachi.services:getFibunachiNumber" id="7253c68c-629c-4cc0-a2b0-7261379ba1a9"><con:settings/><con:parameters><con:parameter required="false"><con:name>num1</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Fibonachi.services:getFibunachiNumber 1" id="6d81ea99-d6ba-4972-820a-19d365d980cb" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="a9a447e6-376e-41a8-9960-7d92ba0da24f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://vmmosy07.eur.ad.sag:5554</con:endpoint><con:request/><con:originalUri>http://vmmosy07.eur.ad.sag/invoke/Fibonachi.services:getFibunachiNumber</con:originalUri><con:credentials><con:username>Administrator</con:username><con:password>manage</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="num1" value="6" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>num1</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:WsdlInterface" id="ef2240ec-33a1-4491-b419-1b867427508c" wsaVersion="NONE" name="service_webServiceSabreen_prov_Binder" type="wsdl" bindingName="{http://vmlna01.eur.ad.sag/service.webServiceSabreen:prov}service_webServiceSabreen_prov_Binder" soapVersion="1_1" anonymous="optional" definition="http://vmlna01.eur.ad.sag:5555/ws/service.webServiceSabreen:prov?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://vmlna01.eur.ad.sag:5555/ws/service.webServiceSabreen:prov?WSDL"><con:part><con:url>http://vmlna01.eur.ad.sag:5555/ws/service.webServiceSabreen:prov?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="prov" targetNamespace="http://vmlna01.eur.ad.sag/service.webServiceSabreen:prov" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://vmlna01.eur.ad.sag/service.webServiceSabreen:prov" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://vmlna01.eur.ad.sag/service.webServiceSabreen:prov">
+      <xsd:element name="new_flowservice_toAdd" type="tns:new_flowservice_toAdd"/>
+      <xsd:complexType name="new_flowservice_toAdd">
+        <xsd:sequence>
+          <xsd:element name="num1" nillable="true" type="xsd:string"/>
+          <xsd:element name="num2" nillable="true" type="xsd:string"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="prov_PortType_new_flowservice_toAdd">
+    <wsdl:part name="parameters" element="tns:new_flowservice_toAdd"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="prov_PortType">
+    <wsdl:operation name="new_flowservice_toAdd">
+      <wsdl:input message="tns:prov_PortType_new_flowservice_toAdd"></wsdl:input>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="service_webServiceSabreen_prov_Binder" type="tns:prov_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="new_flowservice_toAdd">
+      <soap:operation soapAction="service_webServiceSabreen_prov_Binder_new_flowservice_toAdd" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="service.webServiceSabreen.prov">
+    <wsdl:port name="service_webServiceSabreen_prov_Port" binding="tns:service_webServiceSabreen_prov_Binder">
+      <soap:address location="http://vmlna01.eur.ad.sag:5555/ws/service.webServiceSabreen:prov/service_webServiceSabreen_prov_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://vmlna01.eur.ad.sag:5555/ws/service.webServiceSabreen:prov/service_webServiceSabreen_prov_Port</con:endpoint></con:endpoints><con:operation id="469f8eec-5374-4e9b-8ae6-00c4495fbd60" isOneWay="false" action="service_webServiceSabreen_prov_Binder_new_flowservice_toAdd" name="new_flowservice_toAdd" bindingOperationName="new_flowservice_toAdd" type="One-Way" inputName="" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="089a20fe-e947-4307-8204-deafeea774ce" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://vmlna01.eur.ad.sag:5555/ws/service.webServiceSabreen:prov/service_webServiceSabreen_prov_Port</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://vmlna01.eur.ad.sag/service.webServiceSabreen:prov">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:new_flowservice_toAdd>\r
+         <num1>?</num1>\r
+         <num2>?</num2>\r
+      </ser:new_flowservice_toAdd>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="service_webServiceSabreen_prov_Binder_new_flowservice_toAdd"/></con:call><con:call id="3e126d93-7517-4743-beb4-3b43ba6f5c9c" name="Request 2"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="" value="" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://vmlna01.eur.ad.sag:5555/ws/service.webServiceSabreen:prov/service_webServiceSabreen_prov_Port</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://vmlna01.eur.ad.sag/service.webServiceSabreen:prov">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:new_flowservice_toAdd>\r
+         <num1>1</num1>\r
+         <num2>1</num2>\r
+      </ser:new_flowservice_toAdd>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:username>Administrator</con:username><con:password>manage</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="service_webServiceSabreen_prov_Binder_new_flowservice_toAdd"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="869d6ae0-1e43-40e1-bcfe-c0ca09564950" name="IntegrationServer_TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="54267a2c-1307-4b66-82ce-380668e28d0b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="runIntegrationServerService" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Pub.flow:debugLog 1 - Request 1" id="2d9a3cbc-62ce-4184-86e0-d35eff58ba65" disabled="true"><con:settings/><con:config service="http://vmmosy07.eur.ad.sag:5555" resourcePath="/invoke/pub.flow:debugLog" methodName="Pub.flow:debugLog 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Pub.flow:debugLog 1 - Request 1" id="a455aad7-c84f-4c38-9e08-3fdf40cf7795" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://vmmosy07.eur.ad.sag:5555</con:endpoint><con:request/><con:originalUri>http://vmmosy07.eur.ad.sag/invoke/pub.flow:debugLog</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="f4ef503b-db8f-44c8-9088-c05fddb0352c" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:username>Administrator</con:username><con:password>manage</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Fibonachi.services:getFibunachiNumber 1 - Request 1" id="cc3a0a98-f842-4901-829c-4dae09056fff"><con:settings/><con:config service="http://vmmosy07.eur.ad.sag:5554" resourcePath="/invoke/Fibonachi.services:getFibunachiNumber" methodName="Fibonachi.services:getFibunachiNumber 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Fibonachi.services:getFibunachiNumber 1 - Request 1" id="a9a447e6-376e-41a8-9960-7d92ba0da24f" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://vmmosy07.eur.ad.sag:5554</con:endpoint><con:request/><con:originalUri>http://vmmosy07.eur.ad.sag/invoke/Fibonachi.services:getFibunachiNumber</con:originalUri><con:assertion type="Simple Contains" id="951b872b-19f1-428e-8e68-d2052837514b" name="Contains"><con:configuration><token>&lt;td>8&lt;/td></token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:username>Administrator</con:username><con:password>manage</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="num1" value="6" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>num1</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
